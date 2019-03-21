@@ -1,9 +1,18 @@
 import React from "react"
 import ReactDOM from "react-dom"
 
-ReactDOM.render(
-    <div>
-        <h1>Hello</h1>
-    </div>,
-    document.getElementById("root")
-)
+import Footer from "./components/Footer.js"
+import MainContent from "./components/MainContent.js"
+import Header from "./components/Header.js"
+
+function MyApp() {
+    return (
+        <div>
+            <Header />
+            <MainContent />
+            <Footer />
+        </div>
+    )
+}
+
+ReactDOM.render(<MyApp />, document.getElementById("root"))
